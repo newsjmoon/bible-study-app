@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Study App</title>
+</head>
+<body>
+    <h1>Bible Verse of the Day</h1>
+    <p id="verse"></p>
+    <script>
+        const verses = [
+            "For I know the plans I have for you, declares the Lord. - Jeremiah 29:11",
+            "The Lord is my shepherd, I shall not want. - Psalm 23:1",
+            "For God so loved the world, that he gave his only Son. - John 3:16"
+        ];
+        const randomIndex = Math.floor(Math.random() * verses.length);
+        document.getElementById("verse").textContent = verses[randomIndex];
+    </script>
+</body>
+</html>
